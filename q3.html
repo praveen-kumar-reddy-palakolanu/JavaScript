@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Q3.JAVASCRIPTARRAY</title>
+    </head>
+    <script>
+        function find(a,n){
+            if(a==null)return void '0';
+            if(n==null)return a[0];
+            if(n<0)return '[]';
+            return a.slice(0,n);
+        }
+        document.write(find([7, 9, 0, -2])+'<br>');
+        document.write(find([],3)+'<br>');
+        document.write(find([7, 9, 0, -2],3)+'<br>');
+        document.write(find([7, 9, 0, -2],6)+'<br>');
+        document.write(find([7, 9, 0, -2],-3)+'<br>');
+    </script>
+    <body>
+        
+    </body>
+</html>
