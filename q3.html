@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Q3.JS</title>
+    </head>
+    <script>
+        var cdate=new Date();
+        var dd=cdate.getDate();
+        var mm=cdate.getMonth()+1;
+        var yyyy=cdate.getFullYear();
+        if(dd<10)dd='0'+dd;
+        if(mm<10)mm='0'+mm;
+        document.write(mm+'-'+dd+'-'+yyyy+"<br>");
+        document.write(mm+'/'+dd+'/'+yyyy+"<br>");
+        document.write(dd+'-'+mm+'-'+yyyy+"<br>");
+        document.write(dd+'/'+mm+'/'+yyyy+"<br>");
+    </script>
+    <body>
+    </body>
+</html>
+
+

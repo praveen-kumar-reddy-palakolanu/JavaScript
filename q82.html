@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Q82.JavaScript </title>
+</head>
+<body>
+    <script>
+        function find(n1, n2) {
+    var ans= 0,
+        x = 1;
+    while (n1 > 0 && n2 > 0) {
+        ans+= x * ((n1 + n2) % 10);
+        n1 = Math.floor(n1 / 10);
+        n2 = Math.floor(n2 / 10);
+        x*= 10;
+    }
+    return ans;
+}
+document.write(find(222, 911)+'<br>');
+document.write(find(200, 900)+'<br>');
+    </script>
+</body>
+</html>

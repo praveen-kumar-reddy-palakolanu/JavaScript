@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Q10.JSBASICS</title>
+    </head>
+    <script>
+        var curr_date= new Date();
+        var Xmas=curr_date.getFullYear();
+        if(curr_date.getMonth()==11 && curr_date.getDate()>25){
+            Xmas+=1;
+        }
+        var day=100*60*60*24;
+        var remainingDays=Math.ceil((Xmas.getTime()- curr_date.getTime())/(day));
+        document.write("The days left until next Christmas are"+remainingDays);
+    </script>
+    <body>
+        
+    </body>
+</html>

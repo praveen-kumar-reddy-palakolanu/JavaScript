@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>call() function </h3>
+    <p id="demo"></p>
+    <script>
+        const person={
+            fullName: function(){
+                return this.firstName+" "+this.lastName;
+            }
+        }
+        const person1={
+            firstName:'Ziffity',
+            lastName:'Solutions'
+        }
+        let x=person.fullName.call(person1);
+        document.getElementById('demo').innerHTML=x;
+    </script>
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>call() function</h1>
+    <p id="demo"></p>
+    <script>
+        const per1={
+            fullName: function(){
+                return this.fName+" "+this.lName;
+            } 
+        }
+        const per2={
+            fName:'praveen kumar',
+            lName:'Reddy',
+        }
+        document.getElementById('demo').innerHTML=per1.fullName.call(per2);
+    </script>
+</body>
+</html> -->

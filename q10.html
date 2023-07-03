@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Q10JSBASICS</title>
+    </head>
+    <form>
+        number1: <input type="number",id="firstNumber" /><br>
+        number2: <input type="number",id="secondNumber" /><br>
+        <input type="button" onclick="MultiplyBy()" value="Multiply"/>
+        <input type="button" onclick="DivisibleBy()" value="Divide"/>
+    </form>
+    <p>Result: <br>
+        <span id='result'></span>
+    </p>
+    <script>
+        function MultiplyBy(){
+            firstNumber=document.getElementById('firstNumber').value;
+            secondNumber=document.getElementById('secondNumber').value;
+            document.getElementById('result').innerHTML= firstNumber* secondNumber;
+        }
+        function DivisibleBy(){
+            firstNumber=document.getElementById('firstNumber').value;
+            secondNumber=document.getElementById('secondNumber').value;
+            document.getElementById('result').innerHTML= firstNumber/ secondNumber;
+        }
+    </script>
+    <body>
+        
+    </body>
+</html>
